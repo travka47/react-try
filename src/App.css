@@ -8,6 +8,13 @@
   font-family: 'Caveat', cursive;
 }
 
+.App-content {
+  grid-area: c;
+  background-color: #dfceb9;
+  min-height: 100vh;
+  z-index: 1;
+}
+
 button {
   align-self: flex-end;
   appearance: button;

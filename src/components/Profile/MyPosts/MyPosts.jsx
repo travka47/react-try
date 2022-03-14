@@ -11,9 +11,9 @@ const MyPosts = () => {
                 <button>Add post</button>
             </div> 
             <div>
-                <Post/>
-                <Post/>
-                <Post/>
+                <Post message="First post"/>
+                <Post message="Second post"/>
+                <Post message="Third post"/>
             </div>
         </div>
     )
