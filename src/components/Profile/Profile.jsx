@@ -16,9 +16,9 @@ const Profile = () => {
                 </div>
                 <div className={classes.infobox}>
                     <ul>
-                        <li>Date of birth: 04.07.2002</li>
-                        <li>City: Vladivostok</li>
-                        <li>Education: FEFU</li>
+                        <li>Date of birth: <span>04.07.2002</span></li>
+                        <li>City: <span>Vladivostok</span></li>
+                        <li>Education: <span>FEFU</span></li>
                         <li>Web site: <a href="https://github.com/travka47">https://github.com/travka47</a></li>
                     </ul>
                 </div>

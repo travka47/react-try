@@ -1,14 +1,14 @@
 .nav {
-    grid-area: n;
-    background-color:#3b6061;
+  grid-area: n;
+  background-color: #3b6061;
 }
-  
+
 .nav a {
-    display: block;
-    text-decoration: none;
-    margin: 20px 0px;
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: 18pt;
-    margin-left: 20px;
+  display: block;
+  text-decoration: none;
+  margin: 20px 0px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20pt;
+  margin-left: 20px;
 }

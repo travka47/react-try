@@ -7,17 +7,22 @@ h3 {
 .container {
   display: block;
   margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .adding {
   display: flex;
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 textarea {
   resize: none;
   border: 2px solid #3b6061;
   border-radius: 4px;
-  font-size: 12pt;
+  font-size: 13pt;
   outline: none;
+  color: rgb(59, 58, 58);
+  font-weight: 500;
 }

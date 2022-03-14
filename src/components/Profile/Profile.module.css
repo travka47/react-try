@@ -23,16 +23,21 @@
 }
 
 .infobox ul {
-    color: #3b6061;
-    list-style-type: none;
-    font-weight: 500;
-    font-size: 17pt;
-    line-height: 50px;
+  color: #3b6061;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 20pt;
+  line-height: 50px;
+}
+
+.infobox ul span {
+  font-weight: 300;
+  color: rgb(59, 58, 58);
 }
 
 .infobox ul a {
-    color: #d76144;
-    text-decoration: none;
+  color: #d76144;
+  text-decoration: none;
 }
 
 .card {

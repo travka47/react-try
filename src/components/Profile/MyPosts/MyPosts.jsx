@@ -7,10 +7,11 @@ const MyPosts = () => {
         <div className={classes.container}>
             <h3>My posts</h3>
             <div className={classes.adding}>
-                <textarea placeholder="type here..." rows="6" cols="70"></textarea>
+                <textarea placeholder="type here..." rows="5" cols="70"></textarea>
                 <button>Add post</button>
             </div> 
             <div>
+                <Post/>
                 <Post/>
                 <Post/>
             </div>

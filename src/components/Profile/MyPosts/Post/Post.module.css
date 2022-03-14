@@ -1,0 +1,39 @@
+.post {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.infobox {
+  height: 150px;
+  width: 100%;
+  max-width: 1095px;
+  /* help */
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.infobox p {
+  margin: 10px 30px 15px 30px;
+  line-height: 30px;
+  color: #3b6061;
+  font-size: 20pt;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+.infobox .text {
+  color: rgb(59, 58, 58);
+}
+
+.infobox span {
+  color: #d76144;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 125px;
+  height: 150px;
+  border-radius: 4%;
+}
