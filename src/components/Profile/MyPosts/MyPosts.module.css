@@ -1,0 +1,23 @@
+h3 {
+  font-size: 25pt;
+  color: #d76144;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: block;
+  margin-left: 20px;
+}
+
+.adding {
+  display: flex;
+  gap: 30px;
+}
+
+textarea {
+  resize: none;
+  border: 2px solid #3b6061;
+  border-radius: 4px;
+  font-size: 12pt;
+  outline: none;
+}

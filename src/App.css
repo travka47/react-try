@@ -3,35 +3,65 @@
   grid-template-areas: 
   "h h"
   "n c";
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
+  font-family: 'Caveat', cursive;
 }
 
-.header {
-  grid-area: h;
-  background-color: palevioletred;
+button {
+  align-self: flex-end;
+  appearance: button;
+  background-color: #0c4648;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Caveat", cursive;
+  font-size: 12pt;
+  font-weight: 700;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 140px;
+  height: 50px;
 }
 
-.header img {
-  height: 60px;
-  width: 60px;
+button:after {
+  background-clip: padding-box;
+  background-color: #3b6061;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
-.nav {
-  grid-area: n;
-  background-color: palevioletred;
+button:main,
+button:focus {
+  user-select: auto;
 }
 
-.nav a {
-  display: block;
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
 }
 
-.content {
-  grid-area: c;
-  background-color: rgb(108, 170, 206);
-  min-height: 100vh;
-}
-
-.bg_image {
-  height: 450px;
+button:disabled {
+  cursor: auto;
 }
