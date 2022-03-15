@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  padding: 20px;
+}
+
+.dialogs_container {
+}
+
+.dialogs_container a {
+  display: table;
+  text-decoration: none;
+  font-size: 23pt;
+  line-height: 80px;
+  color: rgb(59, 58, 58);
+  font-weight: 900;
+}
+
+.dialog {
+  /* display: table;
+    text-decoration: none;
+    font-size: 25pt;
+    line-height: 70px;
+    color: rgb(59, 58, 58);
+    font-weight: 900; */
+}
+
+.dialogs_container a.active {
+  font-size: 26pt;
+  color: whitesmoke;
+  text-shadow: 2px 0 2px #d76144, 0 2px 2px #d76144, -2px 0 2px #d76144,
+    0 -2px 2px #d76144;
+}
+
+.dialogs_container a.inactive {
+  color: rgb(59, 58, 58);
+}
+
+.dialog {
+  display: table;
+  text-decoration: none;
+  font-size: 20pt;
+  line-height: 70px;
+  color: rgb(59, 58, 58);
+  font-weight: 500;
+}
+
+.messages_container {
+}
+
+.message {
+}
