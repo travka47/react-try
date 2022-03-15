@@ -3,7 +3,7 @@
   margin: 20px 0px;
 }
 
-.infobox {
+.info {
   height: 150px;
   width: 100%;
   max-width: 1095px;
@@ -14,7 +14,7 @@
     0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
-.infobox p {
+.info p {
   margin: 10px 30px 15px 30px;
   line-height: 30px;
   color: #3b6061;
@@ -23,12 +23,12 @@
   word-wrap: break-word;
 }
 
-.infobox .text {
+.info .text {
   color: rgb(59, 58, 58);
   font-weight: 300;
 }
 
-.infobox span {
+.info span {
   color: #d76144;
 }
 

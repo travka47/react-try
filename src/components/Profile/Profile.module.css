@@ -1,10 +1,10 @@
-.profile {
+.user {
   display: flex;
   width: 100%;
   gap: 10px;
 }
 
-.infobox {
+.userInfo {
   width: 60%;
   justify-self: flex-end;
   background-color: rgba(255, 255, 255, 0.75);
@@ -14,7 +14,7 @@
     0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
-.infobox ul {
+.userInfo ul {
   color: #3b6061;
   list-style-type: none;
   font-weight: 500;
@@ -22,17 +22,17 @@
   line-height: 50px;
 }
 
-.infobox ul span {
+.userInfo ul span {
   font-weight: 300;
   color: rgb(59, 58, 58);
 }
 
-.infobox ul a {
+.userInfo ul a {
   color: #d76144;
   text-decoration: none;
 }
 
-.card {
+.polaroid {
   position: relative;
   width: 300px;
   height: 350px;
@@ -40,8 +40,8 @@
   border-radius: 4px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.card:before,
-.card:after {
+.polaroid:before,
+.polaroid:after {
   content: "";
   position: absolute;
   top: 0;
@@ -53,15 +53,16 @@
   transition: 0.5s;
   z-index: -1;
 }
-.card:hover:before {
+.polaroid:hover:before {
   transform: rotate(20deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
-.card:hover:after {
+.polaroid:hover:after {
   transform: rotate(10deg);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
-.card .avatar {
+
+.polaroid .userPhoto {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -71,10 +72,10 @@
   transition: 0.5s;
   z-index: 1;
 }
-.card:hover .avatar {
+.polaroid:hover .userPhoto {
   bottom: 80px;
 }
-.card .avatar img {
+.polaroid .userPhoto img {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,7 +83,8 @@
   height: 100%;
   object-fit: cover;
 }
-.card .details {
+
+.polaroid .details {
   position: absolute;
   left: 10px;
   right: 10px;
@@ -90,7 +92,7 @@
   height: 60px;
   text-align: center;
 }
-.card .details h2 {
+.polaroid .details h2 {
   margin: 0;
   padding: 0;
   font-weight: 800;
@@ -98,7 +100,7 @@
   color: #3b6061;
   text-transform: uppercase;
 }
-.card .details h2 span {
+.polaroid .details h2 span {
   font-weight: 700;
   font-size: 16px;
   color: #d76144;
