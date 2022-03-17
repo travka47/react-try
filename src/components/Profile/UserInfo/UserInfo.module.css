@@ -17,9 +17,9 @@
 .userInfo ul {
   color: #3b6061;
   list-style-type: none;
-  font-weight: 500;
-  font-size: 20pt;
-  line-height: 50px;
+  font-weight: 600;
+  font-size: 23pt;
+  line-height: 55px;
 }
 
 .userInfo ul span {
@@ -28,6 +28,7 @@
 }
 
 .userInfo ul a {
+  font-weight: 300;
   color: #d76144;
   text-decoration: none;
 }

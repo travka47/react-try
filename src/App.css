@@ -6,6 +6,7 @@
   grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
   font-family: 'Caveat', cursive;
+  font-size: 25pt;
 }
 
 .App-content {

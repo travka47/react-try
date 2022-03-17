@@ -2,7 +2,10 @@ import React from "react"
 import classes from './MyPosts.module.css'
 import Post from "./Post/Post"
 
-const MyPosts = () => {
+
+const MyPosts = (props) => {
+    let postItems = props.postData.map(item => <Post id={item.id} text={item.text}/>);
+    
     return (
         <div className={classes.container}>
             <h3>My posts</h3>
@@ -11,9 +14,7 @@ const MyPosts = () => {
                 <button>Add post</button>
             </div> 
             <div>
-                <Post message="First post"/>
-                <Post message="Second post"/>
-                <Post message="Third post"/>
+                { postItems }
             </div>
         </div>
     )
