@@ -1,0 +1,19 @@
+.message {
+    display: table;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    font-size: 20pt;
+    border: 2px solid #3b6061;
+    border-radius: 10%;
+}
+
+.left {
+    margin-right: 150px;
+}
+
+.right {
+    align-self: end;
+    margin-left: 150px;
+}

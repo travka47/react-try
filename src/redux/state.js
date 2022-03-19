@@ -8,10 +8,10 @@ let state = {
   },
   messagesPage: {
     dialogData: [
-      { id: 1, name: "Zhenya" },
-      { id: 2, name: "Egorik" },
-      { id: 3, name: "Sam4ik" },
-      { id: 4, name: "Axel" },
+      { id: 1, name: "Zhenya Travka" },
+      { id: 2, name: "Egorik Blintsov" },
+      { id: 3, name: "Sam4ik Tolstyak" },
+      { id: 4, name: "Timothee Chalamet"},
     ],
     messageData: [
       { id: 1, text: "first" },

@@ -6,13 +6,13 @@ import Message from "./Message/Message"
 const Communication = (props) => {
     let dialogItems = props.pageData.dialogData.map(item => <Dialog id={item.id} name={item.name}/>);
     let messageItems = props.pageData.messageData.map(item => <Message id={item.id} text={item.text}/>);
-
+ 
     return (
         <div className={classes.container}>
-            <div className={classes.dialogs_container}>
+            <div>
                 { dialogItems }
             </div>
-            <div className={classes.messages_container}>
+            <div className={classes.message_container}>
                 { messageItems }
             </div>
         </div>
