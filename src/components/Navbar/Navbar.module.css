@@ -3,10 +3,10 @@
   background-color: #3b6061;
 }
 
-.nav a {
+.link {
   display: block;
   text-decoration: none;
-  margin: 20px 0px 20px 20px;
+  margin: 20px;
   color: whitesmoke;
   font-weight: bold;
   font-size: 25pt;
@@ -18,4 +18,29 @@ a.inactive {
 
 a.active {
   color: #d76144;
+}
+
+.friend_container {
+  display: flex;
+  gap: 1rem;
+  margin: 20px;
+}
+
+.friend {
+  display: block;
+  width: 63px;
+}
+
+.friend img {
+  width: 63px;
+  height: 75px;
+  border-radius: 4%;
+}
+
+.friend a {
+  color: whitesmoke;
+  font-size: 16pt;
+  text-align: center;
+  text-decoration: none;
+  /* доделать */
 }
