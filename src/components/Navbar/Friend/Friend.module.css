@@ -1,0 +1,19 @@
+.friend {
+  display: block;
+  width: 63px;
+}
+
+.friend img {
+  width: 63px;
+  height: 75px;
+  border-radius: 4%;
+}
+
+.friend a {
+  color: whitesmoke;
+  font-size: 16pt;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.5rem;
+}

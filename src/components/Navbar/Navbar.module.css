@@ -25,22 +25,3 @@ a.active {
   gap: 1rem;
   margin: 20px;
 }
-
-.friend {
-  display: block;
-  width: 63px;
-}
-
-.friend img {
-  width: 63px;
-  height: 75px;
-  border-radius: 4%;
-}
-
-.friend a {
-  color: whitesmoke;
-  font-size: 16pt;
-  text-align: center;
-  text-decoration: none;
-  /* доделать */
-}
