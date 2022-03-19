@@ -21,6 +21,14 @@ let state = {
     ],
   },
   sidebar: {
+    linkData: [
+      { name: "Profile" },
+      { name: "Messages" },
+      { name: "News" },
+      { name: "Music" },
+      { name: "Settings" },
+      { name: "Friends" }
+    ],
     friendData: [
       { id: 1, name: "Zhenya Travka" },
       { id: 2, name: "Egorik Blintsov" },

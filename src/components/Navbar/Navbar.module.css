@@ -3,23 +3,6 @@
   background-color: #3b6061;
 }
 
-.link {
-  display: block;
-  text-decoration: none;
-  margin: 20px;
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 25pt;
-}
-
-a.inactive {
-  color: whitesmoke;
-}
-
-a.active {
-  color: #d76144;
-}
-
 .friend_container {
   display: flex;
   gap: 1rem;
