@@ -9,7 +9,7 @@ const Friend = (props) => {
         src="https://i1.wp.com/s1.r29static.com/bin/entry/0e2/x,80/1894701/image.jpg"
         alt="avatar"
       ></img>
-      <NavLink to={`/friends/${props.id}`}>{props.name}</NavLink>
+      <NavLink to={`/Friends/${props.id}`}>{props.name}</NavLink>
     </div>
   );
 };
