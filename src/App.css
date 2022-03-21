@@ -16,6 +16,17 @@
   z-index: 1;
 }
 
+textarea {
+  resize: none;
+  background-color: whitesmoke;
+  border: 2px solid #3b6061;
+  border-radius: 4px;
+  font-size: 13pt;
+  outline: none;
+  color: rgb(59, 58, 58);
+  font-weight: 500;
+}
+
 button {
   align-self: flex-end;
   appearance: button;
