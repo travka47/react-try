@@ -12,8 +12,11 @@ const Communication = (props) => {
   ));
   let newMessageElement = React.createRef();
   let sendMessage = () => {
+    props.sendMessage();
+  };
+  let onNewMessageTextChange = () => {
     let text = newMessageElement.current.value;
-    alert(text);
+    props.updateNewMessageText(text);
   };
 
   return (
@@ -22,7 +25,13 @@ const Communication = (props) => {
       <div className={classes.message_container}>
         {messageItems}
         <div className={classes.adding}>
-          <textarea ref={newMessageElement} rows="2" cols="57"></textarea>
+          <textarea
+            onChange={onNewMessageTextChange}
+            value={props.pageData.newMessageText}
+            ref={newMessageElement}
+            rows="2"
+            cols="57"
+          />
           <button onClick={sendMessage}>Send</button>
         </div>
       </div>

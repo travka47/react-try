@@ -28,7 +28,13 @@ function App(props) {
           />
           <Route
             path="/messages/*"
-            element={<Communication pageData={props.state.messagesPage} />}
+            element={
+              <Communication 
+                pageData={props.state.messagesPage}
+                sendMessage={props.sendMessage}
+                updateNewMessageText={props.updateNewMessageText}
+              />
+            }
           />
           <Route path="/news/*" element={<News />} />
           <Route path="/music/*" element={<Music />} />
