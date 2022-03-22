@@ -51,9 +51,11 @@ let store = {
       id: 4,
       text: this._state.profilePage.newPostText,
     };
-    this._state.profilePage.postData.push(newPost);
-    this._state.profilePage.newPostText = "";
-    this._callSubscriber(this._state);
+    if (newPost.text !== "") {
+      this._state.profilePage.postData.push(newPost);
+      this._state.profilePage.newPostText = "";
+      this._callSubscriber(this._state);
+    }
   },
   updateNewPostText(newPostText) {
     this._state.profilePage.newPostText = newPostText;
@@ -64,9 +66,11 @@ let store = {
       id: 66,
       text: this._state.messagesPage.newMessageText,
     };
-    this._state.messagesPage.messageData.push(newMessage);
-    this._state.messagesPage.newMessageText = "";
-    this._callSubscriber(this._state);
+    if (newMessage.text !== "") {
+      this._state.messagesPage.messageData.push(newMessage);
+      this._state.messagesPage.newMessageText = "";
+      this._callSubscriber(this._state);
+    }
   },
   updateNewMessageText(newMessageText) {
     this._state.messagesPage.newMessageText = newMessageText;
