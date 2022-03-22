@@ -46,38 +46,45 @@ let store = {
   _callSubscriber() {
     console.log("state was changed");
   },
-  addPost() {
-    let newPost = {
-      id: 4,
-      text: this._state.profilePage.newPostText,
-    };
-    if (newPost.text !== "") {
-      this._state.profilePage.postData.push(newPost);
-      this._state.profilePage.newPostText = "";
-      this._callSubscriber(this._state);
-    }
-  },
-  updateNewPostText(newPostText) {
-    this._state.profilePage.newPostText = newPostText;
-    this._callSubscriber(this._state);
-  },
-  sendMessage() {
-    let newMessage = {
-      id: 66,
-      text: this._state.messagesPage.newMessageText,
-    };
-    if (newMessage.text !== "") {
-      this._state.messagesPage.messageData.push(newMessage);
-      this._state.messagesPage.newMessageText = "";
-      this._callSubscriber(this._state);
-    }
-  },
-  updateNewMessageText(newMessageText) {
-    this._state.messagesPage.newMessageText = newMessageText;
-    this._callSubscriber(this._state);
-  },
   subscribe(observer) {
     this._callSubscriber = observer;
+  },
+  dispatch(action) {
+    switch (action.type) {
+      case "ADD-POST":
+        let newPost = {
+          id: 4,
+          text: this._state.profilePage.newPostText,
+        };
+        if (newPost.text !== "") {
+          this._state.profilePage.postData.push(newPost);
+          this._state.profilePage.newPostText = "";
+          this._callSubscriber(this._state);
+        }
+        break;
+      case "UPDATE-NEW-POST-TEXT":
+        this._state.profilePage.newPostText = action.newPostText;
+        this._callSubscriber(this._state);
+        break;
+      case "SEND-MESSAGE":
+        let newMessage = {
+          id: 66,
+          text: this._state.messagesPage.newMessageText,
+        };
+        if (newMessage.text !== "") {
+          this._state.messagesPage.messageData.push(newMessage);
+          this._state.messagesPage.newMessageText = "";
+          this._callSubscriber(this._state);
+        }
+        break;
+      case "UPDATE-NEW-MESSAGE-TEXT":
+        this._state.messagesPage.newMessageText = action.newMessageText;
+        this._callSubscriber(this._state);
+        break;
+      default:
+        console.log("Wrong action type");
+        break;
+    }
   },
 };
 

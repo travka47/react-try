@@ -21,8 +21,7 @@ function App(props) {
             element={
               <Profile
                 pageData={props.state.profilePage}
-                addPost={props.addPost}
-                updateNewPostText={props.updateNewPostText}
+                dispatch={props.dispatch}
               />
             }
           />
@@ -31,8 +30,7 @@ function App(props) {
             element={
               <Communication 
                 pageData={props.state.messagesPage}
-                sendMessage={props.sendMessage}
-                updateNewMessageText={props.updateNewMessageText}
+                dispatch={props.dispatch}
               />
             }
           />

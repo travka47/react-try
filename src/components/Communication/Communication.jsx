@@ -12,11 +12,11 @@ const Communication = (props) => {
   ));
   let newMessageElement = React.createRef();
   let sendMessage = () => {
-    props.sendMessage();
+    props.dispatch({type: "SEND-MESSAGE"});
   };
   let onNewMessageTextChange = () => {
     let text = newMessageElement.current.value;
-    props.updateNewMessageText(text);
+    props.dispatch({type: "UPDATE-NEW-MESSAGE-TEXT", newMessageText: text});
   };
 
   return (
