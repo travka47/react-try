@@ -6,13 +6,13 @@
   grid-template-rows: 80px 1fr;
   grid-template-columns: 2fr 10fr;
   font-family: 'Caveat', cursive;
+  min-height: 100vh;
   font-size: 25pt;
 }
 
 .App-content {
   grid-area: c;
   background-color: #dfceb9;
-  min-height: 100vh;
   z-index: 1;
 }
 
