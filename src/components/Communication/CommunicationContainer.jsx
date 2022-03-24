@@ -1,32 +1,34 @@
-import React from "react";
+import { connect } from "react-redux";
 import {
   sendMessageActionCreator,
   updateNewMessageTextActionCreator,
 } from "../../redux/messages-reducer";
 import Communication from "./Communication";
 
-const CommunicationContainer = (props) => {
-  let state = props.store.getState().messagesPage;
-
-  let sendMessage = () => {
-    let action = sendMessageActionCreator();
-    props.store.dispatch(action);
+let mapStateToProps = (state) => {
+  return {
+    dialogData: state.messagesPage.dialogData,
+    messageData: state.messagesPage.messageData,
+    newMessageText: state.messagesPage.newMessageText,
   };
-
-  let updateNewMessageText = (text) => {
-    let action = updateNewMessageTextActionCreator(text);
-    props.store.dispatch(action);
-  };
-
-  return (
-    <Communication
-      sendMessage={sendMessage}
-      updateNewMessageText={updateNewMessageText}
-      dialogData={state.dialogData}
-      messageData={state.messageData}
-      newMessageText={state.newMessageText}
-    />
-  );
 };
+
+let mapDispatchToProps = (dispatch) => {
+  return {
+    sendMessage: () => {
+      let action = sendMessageActionCreator();
+      dispatch(action);
+    },
+    updateNewMessageText: (text) => {
+      let action = updateNewMessageTextActionCreator(text);
+      dispatch(action);
+    },
+  };
+};
+
+const CommunicationContainer = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Communication);
 
 export default CommunicationContainer;

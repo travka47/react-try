@@ -4,10 +4,10 @@ import Friend from "./Friend/Friend";
 import Link from "./Link/Link";
 
 const Navbar = (props) => {
-  let friendItems = props.sidebarData.friendData.map((item) => (
+  let friendItems = props.friendData.map((item) => (
     <Friend id={item.id} name={item.name} />
   ));
-  let linkItems = props.sidebarData.linkData.map((item) => (
+  let linkItems = props.linkData.map((item) => (
     <Link name={item.name} />
   ));
 
