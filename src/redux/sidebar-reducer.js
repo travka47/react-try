@@ -5,7 +5,8 @@ let initialState = {
     { name: "News" },
     { name: "Music" },
     { name: "Settings" },
-    { name: "Friends" },
+    { name: "Users" },
+    { name: "Friends" }
   ],
   friendData: [
     { id: 1, name: "Zhenya Travka" },

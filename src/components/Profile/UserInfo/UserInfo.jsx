@@ -9,7 +9,7 @@ const UserInfo = () => {
           <img
             src="https://i1.wp.com/s1.r29static.com/bin/entry/0e2/x,80/1894701/image.jpg"
             alt="avatar"
-          ></img>
+          />
         </div>
         <div className={classes.details}>
           <h2>
