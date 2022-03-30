@@ -1,3 +1,47 @@
-.card {
+.userCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4%;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+  0 8px 10px -6px rgb(0 0 0 / 0.1);
+  width: 240px;
+}
 
+.userCard button {
+  align-self: center;
+  margin: 7px 0;
+}
+
+.unfollowed {
+  background-color: #ba5139;
+}
+
+.unfollowed:after {
+  background-color: #d76144;
+}
+
+.userPhoto {
+  height: 280px;
+  width: 240px;
+  border-radius: 4%;
+  margin-bottom: 10px;
+}
+
+.userName {
+  margin: 0;
+  padding: 0 10px;
+  color: #d76144;
+  font-weight: 500;
+  font-size: 22pt;
+}
+
+.userStatus {
+  margin: 0;
+  padding: 5px 10px;
+  color: rgb(59, 58, 58);
+  font-weight: 300;
+  font-size: 17pt;
+  word-wrap: break-word;
 }

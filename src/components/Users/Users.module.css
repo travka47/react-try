@@ -1,4 +1,9 @@
-.userPhoto {
-  height: 120px;
-  width: 90px;
+.container {
+  margin: 20px;
+}
+
+.usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
