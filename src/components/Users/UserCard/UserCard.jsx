@@ -13,10 +13,10 @@ const UserCard = (props) => {
         className={classes.userStatus}>{props.user.status != null ? props.user.status : "status status status status status status status status"}</p>
       {props.user.followed
         ? <button className={classes.unfollowed} onClick={() => {
-          this.props.unfollow(props.user.id)
+          props.unfollow(props.user.id)
         }}>Unfollow</button>
-        : <button className={classes.followButton} onClick={() => {
-          this.props.follow(props.user.id)
+        : <button onClick={() => {
+          props.follow(props.user.id)
         }}>Follow</button>
       }
     </div>

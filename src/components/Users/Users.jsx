@@ -22,7 +22,11 @@ class Users extends React.Component {
         </div>
         <div className={classes.usersContainer}>
           {this.props.userData.map(user => <div key={user.id}>
-              <UserCard user={user}/>
+              <UserCard
+                user={user}
+                follow={this.props.follow}
+                unfollow={this.props.unfollow}
+              />
             </div>
           )}
         </div>
