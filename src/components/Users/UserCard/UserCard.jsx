@@ -10,7 +10,7 @@ const UserCard = (props) => {
       />
       <p className={classes.userName}>{props.user.name}</p>
       <p
-        className={classes.userStatus}>{props.user.status != null ? props.user.status : "status status status status status status status status"}</p>
+        className={classes.userStatus}>{props.user.status}</p>
       {props.user.followed
         ? <button className={classes.unfollowed} onClick={() => {
           props.unfollow(props.user.id)

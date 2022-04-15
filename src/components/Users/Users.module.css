@@ -1,9 +1,30 @@
 .container {
-  margin: 20px;
+  margin: 20px 0 30px 45px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 25pt;
+  color: #3b6061;
+  cursor: pointer;
+  list-style: none;
+}
+
+.page-item .page-link	{
+  text-decoration: none;
+  list-style: none;
+}
+
+.selectedPage {
+  color: whitesmoke;
+  text-shadow: 2px 0 2px #3b6061, 0 2px 2px #3b6061, -2px 0 2px #3b6061, 0 -2px 2px #3b6061;
 }
 
 .usersContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 45px;
 }
